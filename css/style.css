@@ -93,8 +93,7 @@ main.container {
   margin: 60px auto;
 }
 main ul.flex-box {
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0 -10px;
   /* -10px così allineo l'inizio e la
    fine dei flex-items
