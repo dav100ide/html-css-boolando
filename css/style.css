@@ -10,6 +10,12 @@ a {
   text-decoration: none;
   color: inherit;
 }
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
 /* ====================
     common
 ===================== */
@@ -25,12 +31,25 @@ a {
 .fluid-img {
   max-width: 100%;
 }
+.label {
+  font-size: 12px;
+  color: white;
+  padding: 3px 10px;
+}
+.discount {
+  background-color: red;
+}
+.speciality {
+  background-color: green;
+}
 /* ====================
     typography
 ===================== */
 body {
   font-family: 'roboto', sans-serif;
-  height: 200vh;
+}
+h6 {
+  font-weight: lighter;
 }
 /* ====================
      header
@@ -70,7 +89,67 @@ header .logo-container {
 /* ====================
         main
 ===================== */
+main {
+  margin: 60px 0;
+}
+main ul.flex-box {
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 -10px;
+  /* -10px così allineo l'inizio e la
+   fine dei flex-items
+    con la width del container */
+}
+main ul.product-list li {
+  margin: 0 10px;
+  width: calc(100% / 3 - 20px);
+}
+
+/* ====================
+   article della main
+===================== */
+.product-photo img:last-of-type {
+  display: none;
+}
+.product-photo:hover img:first-of-type {
+  display: none;
+}
+.product-photo:hover img:last-of-type {
+  display: block;
+}
+
+.product-info span {
+  font-size: 14px;
+}
+.product-info span:first-of-type {
+  color: red;
+  font-weight: bold;
+}
+.product-info span:nth-of-type(2) {
+  text-decoration: line-through;
+}
+/* etichette della foto prodotto  */
+.product-photo {
+  position: relative;
+}
+.heart {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  font-size: 35px;
+  background-color: white;
+  padding: 10px 20px;
+}
+.heart:hover {
+  color: red;
+}
+
+.labels {
+  position: absolute;
+  left: 0;
+  bottom: 50px;
+}
 
 /* ====================
        footer
-===================== */
+===================== */ ;
