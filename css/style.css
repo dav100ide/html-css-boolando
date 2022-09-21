@@ -89,9 +89,6 @@ header .logo-container {
 /* ====================
         main
 ===================== */
-main {
-  margin: 60px 0;
-}
 main.container {
   margin: 60px auto;
 }
@@ -155,4 +152,50 @@ main ul.product-list li {
 
 /* ====================
        footer
-===================== */ ;
+===================== */
+footer {
+  background-color: black;
+  color: white;
+  padding: 30px 0;
+}
+/* footer left content */
+.footer-left-content,
+.footer-right-content {
+  width: 50%;
+}
+.footer-left-content li {
+  display: inline-block;
+  margin-inline-end: 10px;
+}
+.footer-left-content li:hover {
+  text-decoration: underline;
+}
+.footer-left-content > span {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer-left-content > span,
+.footer-right-content {
+  /*nome ditta + social medias*/
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* footer right content */
+
+.footer-right-content {
+  text-align: right;
+}
+.footer-right-content > ul {
+  margin-top: 20px;
+}
+.footer-right-content > ul li {
+  display: inline-block;
+}
+
+.footer-right-content i {
+  margin-inline-start: 10px;
+}
+.footer-right-content i:hover {
+  color: #ff6900;
+}
