@@ -1,0 +1,76 @@
+/* ====================
+    html reset
+===================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* ====================
+    common
+===================== */
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fluid-img {
+  max-width: 100%;
+}
+/* ====================
+    typography
+===================== */
+body {
+  font-family: 'roboto', sans-serif;
+  height: 200vh;
+}
+/* ====================
+     header
+===================== */
+header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100; /* l'header rimane sempre visibile nella viewport*/
+  background-color: #ff6900;
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 2px grey;
+}
+.header-portal,
+.header-icons {
+  width: calc(85% / 2);
+}
+
+header .logo-container {
+  width: 15%;
+}
+.header-portal {
+  font-weight: bold;
+}
+.header-portal > * {
+  margin-inline-end: 5px;
+}
+.header-icons {
+  text-align: right;
+}
+.header-icons > * {
+  margin-inline-start: 5px;
+}
+
+/* ====================
+        main
+===================== */
+
+/* ====================
+       footer
+===================== */
