@@ -46,7 +46,7 @@ img {
     typography
 ===================== */
 body {
-  font-family: 'roboto', sans-serif;
+  font-family: "roboto", sans-serif;
 }
 h6 {
   font-weight: lighter;
@@ -90,7 +90,7 @@ header .logo-container {
         main
 ===================== */
 main.container {
-  margin: 60px auto;
+  margin: 50px auto;
 }
 main ul.flex-box {
   flex-wrap: wrap;
@@ -100,7 +100,7 @@ main ul.flex-box {
     con la width del container */
 }
 main ul.product-list li {
-  margin: 0 10px;
+  margin: 0 10px 10px;
   width: calc(100% / 3 - 20px);
 }
 
